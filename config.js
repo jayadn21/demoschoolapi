@@ -1,9 +1,9 @@
 var config = {};
 
 config.sqlUsername = 'sa';
-config.sqlPassword = 'S!mpfo2019';
-config.sqlhostname = '34.69.201.21';
-config.sqlport = '1433';
+config.sqlPassword = 'Dudaily@123';
+config.sqlhostname = '167.71.235.9';
+config.sqlport = '5510';
 config.sqldatabase = 'DemoSchool';//'SchoolProject';
 config.encrypt = false;
 
