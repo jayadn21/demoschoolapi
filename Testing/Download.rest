@@ -1,0 +1,10 @@
+@base_url = http://localhost:3005
+
+GET {{base_url}}/DownloadFile/getFile?filePath=keshavauser.jpg HTTP/1.1
+
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODQwODY1NzcsImV4cCI6MTU4NDE2OTM3N30.2GI5SYtfzFLIDwt-er9AtIhRvmgpfu_c0ykiuUqOlCA
+
+# {
+#    "imagePath":"1"
+# }

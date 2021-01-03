@@ -1,0 +1,35 @@
+ALTER PROCEDURE [schooladmin].[ApplicationForm_selectByApplicationNumber] @ApplicationNumber varchar(50)
+AS
+BEGIN
+	SELECT app.[Id]
+	,app.[ApplicationNumber]
+	,app.[ApplicationDate]
+	,app.[InstitutionId]
+	,stu.[Name]
+	,stu.[InstitutionId]
+	,stu.[StudentCode]
+	,stu.[FirstName]
+	,stu.[LastName]
+	,stu.[DateOfBirth]
+	,stu.[AdmissionNo]
+	,stu.[AdmissionDate]
+	,stu.[Gender]
+	,stu.[ReligionId]
+	,stu.[CasteId]
+	,stu.[SubCasteId]
+	,stu.[ReservationCategoryId]
+	,stu.[MediumId]
+	,stu.[PresentAddress]
+	,stu.[PermanentAddress]
+	,stu.[PhoneNumber]
+	,stu.[ParentId]
+	,stu.[BloodGroup]
+	,stu.[PhysicallyChallenged]
+	,stu.[PatternId]
+	,stu.[CurrentClassSectionMediumId]
+	,stu.[Active]
+	,stu.[UserName]
+FROM [schooladmin].[ApplicationForm] as app
+Inner join [schooladmin].[Student] as stu on app.[ApplicationNumber] = stu.[ApplicationNumber]
+ where app.[ApplicationNumber] = @ApplicationNumber
+END

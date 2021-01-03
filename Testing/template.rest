@@ -1,0 +1,10 @@
+@base_url = http://localhost:3005
+POST {{base_url}}/SmsTemplate/setSmsTemplate HTTP/1.1
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODgyMzYzOTYsImV4cCI6MTU4ODMxOTE5Nn0.4XryxFykMhKjV1HaOlUUsjMvNmaF2ivV-WaOsp48wHU
+
+{
+    "Id":"-1",
+    "Name":"Holiday",
+	"Message": "Sunday"
+}
