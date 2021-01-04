@@ -116,7 +116,7 @@ const UserTypes = require("./routes/UserType/UserTypes");
 //const BulkMessage = require("./routes/Message");
 var storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "./public/uploads");
+    cb(null, "./public");
   },
   filename: (req, file, cb) => {
     cb(null, file.originalname);
@@ -242,7 +242,7 @@ app.get("/", function (req, res) {
 
 app.post("/FileUpload", upload.single("file"), function (req, res) {
   debug(req.file);
-  //console.log('storage location is ', req.hostname + '/' + req.file.path);
+  console.log('storage location is ', req.hostname + '/' + req.file.path);
   return res.send(req.file.path);
 });
 
